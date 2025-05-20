@@ -43,15 +43,11 @@ supportportal/
 git clone https://github.com/ditt-brukernavn/supportportal.git
 cd supportportal
 
-###2. Installer backend
-
-```bash
+###2. Kjøre backend
 cd server
-npm install
 node server.js
 
+
 ### 3. Installer og start frontend
-```bash
 cd ../client
-npm install
 npm start
