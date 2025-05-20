@@ -25,15 +25,20 @@ Dette prosjektet er en komplett webapplikasjon for håndtering av brukerstøtteh
 ---
 
 ## 📂 Prosjektstruktur
-supportportal/
-├── client/ # React-frontend
-│ └── src/
-│ └── Homepage.jsx # Startsiden
-├── server/ # Node.js-backend
-│ ├── server.js # Hovedserverfil
-│ ├── support.db # SQLite databasefil (opprettes automatisk)
-│ └── create_ad_user.py # Python-skript for AD-brukere
+REACT_IIS/
+│
+├── client/                 # React frontend
+│   ├── public/
+│   └── src/
+│       └── Homepage.jsx    # Hovedkomponent
+│
+├── server/                 # Node.js backend
+│   ├── server.js           # Express-server
+│   ├── support.db          # SQLite database
+│   └── create_ad_user.py   # Python-skript for AD-brukeropprettelse
+│
 └── README.md
+
 
 ## 🚀 Installasjon
 
