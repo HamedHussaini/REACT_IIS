@@ -41,7 +41,7 @@ supportportal/
 
 ```bash
 git clone https://github.com/ditt-brukernavn/supportportal.git
-cd supportportal
+cd REACT_IIS
 
 ###2. Kjøre backend
 cd server
