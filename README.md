@@ -48,6 +48,6 @@ cd server
 node server.js
 
 
-### 3. Installer og start frontend
+### 3. start frontend
 cd ../client
 npm start
