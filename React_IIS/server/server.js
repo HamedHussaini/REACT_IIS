@@ -83,25 +83,30 @@ app.put("/api/support/:id/resolve", (req, res) => {
   });
 });
 
-// POST: AD-brukeropprettelse via Python-script
+const path = require("path");
+ 
 app.post("/api/support/:id/ad", (req, res) => {
   const { username, name, type } = req.body;
   const password = "Temp123!";
-
-  console.log(`Oppretter AD-bruker for ${name} (${type})`);
-
-  const cmd = `python3 create_ad_user.py --username ${username} --password ${password}`;
-
+ 
+  if (!username) return res.status(400).send("Mangler brukernavn");
+ 
+  console.log(`Oppretter AD-bruker: ${username} (${name})`);
+ 
+  const python = "C:\\Users\\Administrator\\Documents\\REACT_ISS-main\\.venv\\Scripts\\python.exe";
+  const script = path.join(__dirname, "create_ad_user.py");
+ 
+  const cmd = `"${python}" "${script}" --username ${username} --password ${password}`;
+ 
   exec(cmd, (err, stdout, stderr) => {
     if (err) {
-      console.error("Feil i AD-skript:", err);
-      return res.status(500).json({
-        error: "Feil under AD-opprettelse",
-        stderr: stderr.toString(),
-      });
+      console.error("Feil i exec:", err);
+      return res.status(500).json({ error: "AD-feil", stderr: stderr.toString() });
     }
-
-    console.log("AD-bruker opprettet:", stdout);
+ 
+    console.log("stdout:", stdout);
+    console.log("stderr:", stderr);
+ 
     res.json({ message: "Bruker opprettet i AD", output: stdout });
   });
 });
