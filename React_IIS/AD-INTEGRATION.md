@@ -42,6 +42,8 @@ Finn den i: **Server Manager → Verktøy → Active Directory Users and Compute
 
 Eksempel: `bjornholt\administrator`
 
+> **Merk:** I Python-koden skrives dette med dobbel backslash fordi det er et escape-tegn: `'bjornholt\\administrator'`
+
 ### AD_PASS
 Passordet til adminkontoen ovenfor.
 
