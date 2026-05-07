@@ -6,7 +6,7 @@ Velg én økt per dag basert på hva elevene har lyst til å lære.
 
 ---
 
-## Tidsplan (samme for hver økt)
+## Aktivitetsplan
 
 |  Aktivitet |
 |-----------|
