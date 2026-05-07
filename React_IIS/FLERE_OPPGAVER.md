@@ -439,23 +439,3 @@ app.get("/api/support/:id", (req, res) => {
 });
 ```
 
----
-
-## Anbefalt rekkefølge
-
-Plukk én økt per dag — de bygger ikke direkte på hverandre, så elevene kan velge fritt.
-
-| Vanskelighet | Anbefalte økter |
-|-------------|------------------|
-| Begynner | Økt A, Økt B |
-| Middels | Økt C, Økt D, Økt E |
-| Litt mer utfordrende | Økt F, Økt G |
-
----
-
-## For læreren
-
-- **Demo først, alltid** — vis ferdig resultat før elevene begynner
-- **La elevene velge** — det er motiverende å få bestemme selv
-- **Hjelp 1-til-1** — hold deg i klasserommet og gå rundt
-- **Avslutt med deling** — la 2-3 elever vise koden sin
