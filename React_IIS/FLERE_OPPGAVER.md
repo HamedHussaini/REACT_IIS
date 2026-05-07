@@ -8,13 +8,13 @@ Velg én økt per dag basert på hva elevene har lyst til å lære.
 
 ## Tidsplan (samme for hver økt)
 
-| Tid | Aktivitet |
-|-----|-----------|
-| 0–10 min | Introduksjon |
-| 10–20 min | Demonstrasjon |
-| 20–100 min | Egen koding |
-| 100–115 min | Test og feilsøking |
-| 115–120 min | Oppsummering |
+|  Aktivitet |
+|-----------|
+|  Introduksjon |
+|  Demonstrasjon |
+| Egen koding |
+|  Test og feilsøking |
+|  Oppsummering |
 
 ---
 
