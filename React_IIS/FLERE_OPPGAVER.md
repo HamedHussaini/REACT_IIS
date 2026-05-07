@@ -18,11 +18,11 @@ Velg én økt per dag basert på hva elevene har lyst til å lære.
 
 ---
 
-## Økt A — "Forbedre SupportPage" (120 min)
+## Økt A — "Forbedre SupportPage" 
 
 ### Tema: Skjemaforbedringer og brukervennlighet
 
-### Oppgave A1 — Tegnteller (20 min)
+### Oppgave A1 — Tegnteller 
 I `SupportPage.jsx`, vis "X/500 tegn" under beskrivelsesfeltet.
 
 ```jsx
@@ -31,7 +31,7 @@ I `SupportPage.jsx`, vis "X/500 tegn" under beskrivelsesfeltet.
 </Form.Text>
 ```
 
-### Oppgave A2 — Dropdown for problemtype (40 min)
+### Oppgave A2 — Dropdown for problemtype 
 Bytt ut tekstfeltet for "Problemtype" med en dropdown.
 
 **Steg 1 — endre i SupportPage:**
@@ -50,7 +50,7 @@ Bytt ut tekstfeltet for "Problemtype" med en dropdown.
 </Form.Group>
 ```
 
-### Oppgave A3 — Suksess-dialog (40 min)
+### Oppgave A3 — Suksess-dialog 
 Når en henvendelse er sendt inn, vis en stor grønn boks med en "Send ny"-knapp i stedet for kun en alert.
 
 ```jsx
@@ -67,11 +67,11 @@ Når en henvendelse er sendt inn, vis en stor grønn boks med en "Send ny"-knapp
 
 ---
 
-## Økt B — "Forbedre Dashboard" (120 min)
+## Økt B — "Forbedre Dashboard" 
 
 ### Tema: Vis mer informasjon og statistikk
 
-### Oppgave B1 — Vis prosent løste (30 min)
+### Oppgave B1 — Vis prosent løste 
 Legg til et nytt kort som viser prosent løste henvendelser.
 
 ```jsx
@@ -92,7 +92,7 @@ const prosent = data.totalt > 0
 </Col>
 ```
 
-### Oppgave B2 — Henvendelser denne uken (45 min)
+### Oppgave B2 — Henvendelser denne uken 
 Lag et nytt kort som viser hvor mange henvendelser som har kommet inn denne uken.
 
 **Backend (server.js):** Legg til i `/api/dashboard`-endepunktet:
@@ -106,7 +106,7 @@ db.get(
 
 **Frontend:** Vis det i dashboard som et nytt kort.
 
-### Oppgave B3 — Topp 3 problemtyper (45 min)
+### Oppgave B3 — Topp 3 problemtyper
 Vis hvilke 3 problemtyper som er mest vanlige.
 
 **Backend:**
@@ -137,11 +137,11 @@ db.all(
 
 ---
 
-## Økt C — "Rediger henvendelser" (120 min)
+## Økt C — "Rediger henvendelser" 
 
 ### Tema: Full CRUD-funksjonalitet på AdminPage
 
-### Oppgave C1 — Rediger-knapp + modal (60 min)
+### Oppgave C1 — Rediger-knapp + modal 
 Legg til en "Rediger"-knapp på hver rad i `AdminPage`. Knappen åpner en modal med skjemaet forhåndsutfylt.
 
 ```jsx
@@ -180,7 +180,7 @@ const apneRedigerModal = (item) => {
 </Modal>
 ```
 
-### Oppgave C2 — Send PUT til backend (60 min)
+### Oppgave C2 — Send PUT til backend 
 Lagre endringene i databasen via PUT-endepunktet (som finnes i server.js).
 
 ```jsx
@@ -201,11 +201,11 @@ const lagreEndringer = async () => {
 
 ---
 
-## Økt D — "Sortering på tabell" (120 min)
+## Økt D — "Sortering på tabell" 
 
 ### Tema: Klikkbare kolonner og sortering
 
-### Oppgave D1 — Sorter på navn (40 min)
+### Oppgave D1 — Sorter på navn 
 Klikk på "Navn"-overskriften for å sortere alfabetisk.
 
 ```jsx
@@ -233,10 +233,10 @@ const sortert = sortBy ? [...filtrert].sort((a, b) => {
 </th>
 ```
 
-### Oppgave D2 — Sorter på flere felt (40 min)
+### Oppgave D2 — Sorter på flere felt 
 Gjør det samme for "E-post", "Type" og "Dato".
 
-### Oppgave D3 — Visuell tilbakemelding (40 min)
+### Oppgave D3 — Visuell tilbakemelding 
 Når en kolonne er aktiv, vis den med fet skrift eller annen bakgrunnsfarge.
 
 ```jsx
@@ -250,11 +250,11 @@ Når en kolonne er aktiv, vis den med fet skrift eller annen bakgrunnsfarge.
 
 ---
 
-## Økt E — "Validering på skjema" (120 min)
+## Økt E — "Validering på skjema" 
 
 ### Tema: Brukervennlig feilhåndtering
 
-### Oppgave E1 — Inline-validering (60 min)
+### Oppgave E1 — Inline-validering 
 I `SupportPage.jsx`, sjekk hvert felt mens brukeren skriver:
 
 - **Navn** — minst 3 tegn
@@ -280,7 +280,7 @@ const erGyldig = {
 </Form.Control.Feedback>
 ```
 
-### Oppgave E2 — Send-knapp deaktivert (30 min)
+### Oppgave E2 — Send-knapp deaktivert 
 Knappen skal være deaktivert hvis noe er ugyldig:
 
 ```jsx
@@ -292,7 +292,7 @@ Knappen skal være deaktivert hvis noe er ugyldig:
 </Button>
 ```
 
-### Oppgave E3 — Vis sammendrag av feil (30 min)
+### Oppgave E3 — Vis sammendrag av feil 
 Vis en boks øverst som lister opp alle feil:
 
 ```jsx
@@ -310,11 +310,11 @@ Vis en boks øverst som lister opp alle feil:
 
 ---
 
-## Økt F — "Toast-notifikasjoner" (120 min)
+## Økt F — "Toast-notifikasjoner" 
 
 ### Tema: Bytt ut Alert med Toast
 
-### Oppgave F1 — Lag en gjenbrukbar Toast-komponent (60 min)
+### Oppgave F1 — Lag en gjenbrukbar Toast-komponent 
 Lag en ny fil `client/src/shared/ToastMelding.jsx`:
 
 ```jsx
@@ -337,7 +337,7 @@ export default function ToastMelding({ vis, melding, type, onClose }) {
 }
 ```
 
-### Oppgave F2 — Bruk i AdminPage (60 min)
+### Oppgave F2 — Bruk i AdminPage 
 Bytt ut alle `setMelding("...")` med toast:
 
 ```jsx
@@ -362,11 +362,11 @@ visToast("Noe gikk galt", "danger");
 
 ---
 
-## Økt G — "Detaljside for henvendelse" (120 min)
+## Økt G — "Detaljside for henvendelse" 
 
 ### Tema: React Router og dynamiske ruter
 
-### Oppgave G1 — Lag DetaljPage (60 min)
+### Oppgave G1 — Lag DetaljPage 
 Lag en ny fil `client/src/admin/DetaljPage.jsx` som viser én henvendelse i full størrelse.
 
 ```jsx
@@ -410,7 +410,7 @@ export default function DetaljPage() {
 }
 ```
 
-### Oppgave G2 — Legg til ny rute (30 min)
+### Oppgave G2 — Legg til ny rute 
 I `App.js`:
 ```jsx
 import DetaljPage from './admin/DetaljPage';
