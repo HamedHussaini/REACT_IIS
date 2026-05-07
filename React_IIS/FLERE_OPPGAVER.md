@@ -1,6 +1,6 @@
-# Flere tilleggsoppgaver — 120 min økter
+# Flere tilleggsoppgaver 
 
-Her er flere oppgaver elevene kan jobbe med. Hver økt er på 120 min og krever **ikke** Active Directory eller domenetilkobling — alt fungerer lokalt på en hvilken som helst PC.
+Her er flere oppgaver elevene kan jobbe med. Øktene krever **ikke** Active Directory eller domenetilkobling — alt fungerer lokalt på en hvilken som helst PC.
 
 Velg én økt per dag basert på hva elevene har lyst til å lære.
 
@@ -417,7 +417,7 @@ import DetaljPage from './admin/DetaljPage';
 <Route path="/henvendelse/:id" element={<DetaljPage />} />
 ```
 
-### Oppgave G3 — "Vis detaljer"-knapp (30 min)
+### Oppgave G3 — "Vis detaljer"-knapp
 I `AdminPage`, legg til en knapp som navigerer til detaljsiden:
 
 ```jsx
